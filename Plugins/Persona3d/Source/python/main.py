@@ -14,7 +14,7 @@ def reimport_texture():
     import_task.automated = True
     import_task.destination_name =''
     import_task.destination_path = '/Persona3d/PersonaTemplate/'
-    import_task.filename = 'D:/Persona/FBX/baked_diffuse.png'
+    import_task.filename = 'D:/03_12/Persona51/Plugins/Persona3d/Assets/baked_diffuse.png'
     import_task.replace_existing = True
     import_task.save = True
     unreal.AssetToolsHelpers.get_asset_tools().import_asset_tasks([import_task])
@@ -42,9 +42,9 @@ def reimport_animation(fbx_path):
     unreal.AssetToolsHelpers.get_asset_tools().import_asset_tasks([import_task])
 
 def not_unreal_actions():    
-    os.system(r'start /wait cmd /c py D:\\Persona\\UE\\Persona\\Plugins\\personaml\\Source\\python\\client.py -ip "127.0.0.1" -c "D:\Persona\FBX"')
+    os.system(r'start /wait cmd /c py D:\\Persona\\UE\\Persona\\Plugins\\personaml\\Source\\python\\client.py -ip "127.0.0.1" -c "D:\03_12\Persona51\Plugins\Persona3d\Assets"')
 
-fbxFilePath = 'D:/Persona/FBX/wrappedHead_v001.fbx'
+fbxFilePath = 'D:/03_12/Persona51/Plugins/Persona3d/Assets/wrappedHead_v001.fbx'
 
 
 not_unreal_actions()

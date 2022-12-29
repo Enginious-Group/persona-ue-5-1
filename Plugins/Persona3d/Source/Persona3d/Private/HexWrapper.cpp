@@ -12,3 +12,7 @@ FString UHexWrapper::ColorToHex(FColor Color)
 {
     return Color.ToHex();
 }
+
+FString UHexWrapper::GetPathToPlugin() {
+    return IPluginManager::Get().FindPlugin("Persona3d")->GetBaseDir();
+}
